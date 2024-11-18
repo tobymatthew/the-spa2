@@ -11,9 +11,9 @@ export function HeaderComponent() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { name: 'Treatments', href: '#treatments' },
-    { name: 'Facilities', href: '#facilities' },
     { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Reviews', href: '#reviews' },
     { name: 'Contact', href: '#contact' },
   ]
    const  headingColor = "text-muted-gold"
@@ -27,7 +27,7 @@ export function HeaderComponent() {
       </div>
 
       {/* Navigation */}
-      <nav className={`bg-background shadow-md bg-soft-pink-beige font-bold ${headingColor}`}>
+      <nav className={`bg-background shadow-md bg-soft-pink-beige font-bold ${headingColor} hover:text-muted-gold`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
@@ -60,13 +60,13 @@ export function HeaderComponent() {
             </div>
             <div className="hidden lg:flex items-center gap-8">
               {navItems.map((item) => (
-                <Link key={item.name} href={item.href} className="text-base text-muted-gold hover:text-foreground">
+                <Link key={item.name} href={item.href} className="text-base text-muted-gold hover:text-dark-muted-gold">
                   {item.name}
                 </Link>
               ))}
             </div>
             <div className="flex items-center">
-              <Button className='bg-muted-gold'>Book Now</Button>
+              <Button className='bg-muted-gold hover:bg-dark-muted-gold'>Book Now</Button>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ export function HeaderComponent() {
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
           <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 ${headingColor}`}>Welcome to Serenity Spa</h1>
           <p className="text-lg md:text-xl text-muted max-w-2xl mb-8">Experience tranquility and rejuvenation in our luxurious wellness sanctuary</p>
-          <Button size="lg" className="bg-muted-gold">Explore Our Services</Button>
+          <Button size="lg" className="bg-muted-gold hover:bg-dark-muted-gold">BOOK AN APPOINTMENT</Button>
         </div>
       </div>
     </header>

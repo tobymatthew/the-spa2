@@ -62,6 +62,7 @@ const config: Config = {
         },
         'soft-pink-beige': '#F4E7E3',
         'muted-gold': '#B89C7D',
+        'dark-muted-gold': '#AA7A5B',
         'warm-cream': '#EFE3D9',
         'light-taupe': '#D9CFC5',
       },

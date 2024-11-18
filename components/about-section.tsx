@@ -9,7 +9,7 @@ export function AboutSectionComponent() {
  const bulletColor = "text-light-taupe"
 
   return (
-    <section className="bg-soft-pink-beige py-16">
+    <section className="bg-soft-pink-beige py-16" id="about">
       <div className="container mx-auto px-4">
         <div className="flex justify-end mb-4">
           <Button variant="outline" size="sm">
